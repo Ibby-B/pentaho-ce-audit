@@ -935,11 +935,6 @@ Example:
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Get database type</from>
-      <to>Wait for database type to be settled.</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
       <from>Wait for database type to be settled.</from>
       <to>DB type check</to>
       <enabled>Y</enabled>
@@ -947,6 +942,11 @@ Example:
     <hop>
       <from>lookup with time fields</from>
       <to>Wait for database type to be settled.</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Get database type</from>
+      <to>DB type check</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -2095,8 +2095,8 @@ public void dispose(StepMetaInterface smi, StepDataInterface sdi)
       </output>
     </remotesteps>
     <GUI>
-      <xloc>2640</xloc>
-      <yloc>64</yloc>
+      <xloc>2528</xloc>
+      <yloc>112</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
